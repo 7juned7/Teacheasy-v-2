@@ -1,0 +1,119 @@
+.dashboardContainer {
+  background-color: #f5efff;
+  width: 100%;
+
+  padding: 6rem 1rem;
+}
+.student-details {
+  text-align: end;
+  padding: 0rem 4rem;
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.student-text {
+  font-weight: 500;
+}
+
+.graphs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 4rem;
+}
+
+.pieChart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+}
+.barChart {
+  display: flex;
+  width: 250px;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+}
+.charts {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+@media (max-width: 768px) {
+  .dashboardContainer {
+    background-color: #f5efff;
+    width: 100%;
+
+    padding: 4rem 0rem;
+  }
+  .pieChart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
+  }
+  .charts {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0rem;
+  }
+  .graphs {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 0rem;
+  }
+  .barChart {
+    display: flex;
+    width: 300px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 458px) {
+  .dashboardContainer {
+    background-color: #f5efff;
+    width: 100%;
+
+    padding-right: 1rem;
+    padding-bottom: 6rem;
+  }
+  .pieChart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+  }
+  .charts {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0rem;
+  }
+  .graphs {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 0rem;
+  }
+  .barChart {
+    display: flex;
+    width: 200px;
+    height: 180px;
+    align-items: center;
+    justify-content: center;
+  }
+}

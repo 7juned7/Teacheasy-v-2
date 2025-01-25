@@ -1,0 +1,97 @@
+/* .overlay {
+  position: absolute;
+  background-color: hsla(0, 0%, 0%, 0.8);
+  z-index: 9;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+} */
+.cross {
+  rotate: 45deg;
+  cursor: pointer;
+  position: absolute;
+  z-index: 99999;
+  top: 3%;
+  right: 2%;
+  cursor: pointer;
+}
+
+.allStudents {
+  position: fixed;
+  background-color: #a294f9;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: max-content;
+  padding: 5rem 1rem;
+  z-index: 9999;
+  transform: translateX(0);
+  transition: 1s ease-in;
+}
+.display {
+  transform: translateX(100%);
+}
+.filter-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.filter {
+  border: none;
+}
+h2 {
+  font-size: 1.25rem;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button {
+  padding: 10px;
+  background-color: #f5efff;
+
+  cursor: pointer;
+  font-size: 16px;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f5efff;
+  border: 1px solid #f5efff;
+  width: 100%;
+  z-index: 1;
+  color: black;
+}
+.studentList {
+  width: fit-content;
+  height: 90%;
+  overflow-y: scroll;
+  padding: 0 1rem;
+  scrollbar-width: none;
+}
+
+.studentList::-webkit-scrollbar {
+  display: none;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #eee;
+}

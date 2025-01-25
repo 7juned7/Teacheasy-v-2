@@ -1,0 +1,7 @@
+.navbarContainer {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #a294f9;
+}

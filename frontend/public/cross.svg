@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800px" height="800px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>cross</title>
+    <desc>Cross made with rectangles</desc>
+    <g fill="#000000">
+        <!-- Vertical rectangle -->
+        <rect x="11" y="2" width="3" height="21" />
+        <!-- Horizontal rectangle -->
+        <rect x="2" y="11" width="21" height="3" />
+    </g>
+</svg>
