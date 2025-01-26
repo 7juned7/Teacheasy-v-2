@@ -18,26 +18,23 @@ app.use('/api/user', userRoutes)
 app.use('/api/studentdata', studentRoutes)
 
 // --------deployement-----------
-// const __dirname1 = path.resolve();
-// const dev = process.env.NODE_ENV
-// if (dev === "development") {
+const __dirname1 = path.resolve();
+const dev = process.env.NODE_ENV
+if (dev === "development") {
 
-//     app.use(express.static(path.join(__dirname1, "/frontend/build")));
-//     app.get('*', (req, res) => {
+    app.use(express.static(path.join(__dirname1, "/frontend/build")));
+    app.get('*', (req, res) => {
 
 
-//         res.sendFile(path.resolve(__dirname1, "frontend", "build", "index.html"))
-//     });
-// } else {
-//     app.get('/', (req, res) => {
+        res.sendFile(path.resolve(__dirname1, "frontend", "build", "index.html"))
+    });
+} else {
+    app.get('/', (req, res) => {
 
-//         res.send(dev);
+        res.send(dev);
 
-//     })
-// }
-app.use("/",(res,req)=>{
-    res.send("server is running")
-})
+    })
+}
 
 
 
