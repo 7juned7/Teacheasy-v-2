@@ -1,21 +1,21 @@
 const express = require("express");
-// require("dotenv").config()
-// const userRoutes = require("./Routes/userRoutes")
-// const studentRoutes = require("./Routes/studentRoutes")
-// const connectDB = require("./config/db");
-// const path = require("path");
+require("dotenv").config()
+const userRoutes = require("./Routes/userRoutes")
+const studentRoutes = require("./Routes/studentRoutes")
+const connectDB = require("./config/db");
+const path = require("path");
 
 
-// const PORT = process.env.PORT || 4000;
-// connectDB();
+const PORT = process.env.PORT || 4000;
+connectDB();
 
 const app = express();
 
 
-// app.use(express.json())
+app.use(express.json())
 
-// app.use('/api/user', userRoutes)
-// app.use('/api/studentdata', studentRoutes)
+app.use('/api/user', userRoutes)
+app.use('/api/studentdata', studentRoutes)
 
 // --------deployement-----------
 // const __dirname1 = path.resolve();
@@ -43,4 +43,4 @@ app.use("/", (req, res) => {
 
 
 
-app.listen(5000, console.log(`Server Started on PORT ${PORT}`));
+app.listen(4000, console.log(`Server Started on PORT ${PORT}`));
