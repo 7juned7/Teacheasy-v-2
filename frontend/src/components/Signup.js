@@ -23,7 +23,7 @@ const Signup = () => {
                 },
 
             };
-            const { data } = await axios.post("/api/user/login", { email, password }, config)
+            const { data } = await axios.post("https://https://teacheasy-v-2-m1tu.vercel.app/api/user/login", { email, password }, config)
             let userId = data._id;
             let userName = data.name;
             console.log(data)
