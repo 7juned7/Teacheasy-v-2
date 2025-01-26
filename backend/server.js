@@ -4,6 +4,8 @@ const userRoutes = require("./Routes/userRoutes")
 const studentRoutes = require("./Routes/studentRoutes")
 const connectDB = require("./config/db");
 const path = require("path");
+const cors = require('cors');
+app.use(cors());
 
 
 const PORT = process.env.PORT || 4000;
